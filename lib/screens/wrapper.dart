@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pkmn_api/models/myUser.dart';
 import 'package:pkmn_api/screens/authenticate/authenticate.dart';
 import 'package:pkmn_api/screens/home/home.dart';
+
 import 'package:provider/provider.dart';
 
 class Wrapper extends StatelessWidget {
@@ -15,7 +16,7 @@ class Wrapper extends StatelessWidget {
     if (user == null) {
       return Authenticate();
     } else {
-      return HomePage();
+      return Homepage();
     }
   }
 }
